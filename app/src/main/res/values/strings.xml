@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CallMonitor</string>
+    <string name="unknown">unknown</string>
+    <string name="permissions_not_granted">You must grant all permissions (go to App Settings)</string>
+    <string name="call_log_name">Name: %1$s</string>
+    <string name="caller_log_duration">Duration: %1$s sec.</string>
+    <string name="unknown_caller">unknown_caller</string>
+    <string name="port">Port: %1$s</string>
+    <string name="ip_address">IP: %1$s</string>
+</resources>

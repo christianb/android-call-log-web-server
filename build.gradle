@@ -1,0 +1,30 @@
+buildscript {
+    ext.ktor_version = '0.9.1' // ktor version
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:_"
+        classpath "org.jetbrains.kotlin:kotlin-serialization:_"
+    }
+}
+
+plugins {
+    id 'com.android.application' apply false
+    id 'com.android.library' apply false
+    id 'org.jetbrains.kotlin.android' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+allprojects {
+    configurations.all {
+        resolutionStrategy {
+            force("org.objenesis:objenesis:3.2")
+        }
+    }
+}
